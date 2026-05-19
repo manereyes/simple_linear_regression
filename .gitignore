@@ -2,3 +2,4 @@
 Investigation/*.csv
 data/salaries.csv
 env/
+app/__pycache__/

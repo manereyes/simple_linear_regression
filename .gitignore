@@ -1,3 +1,4 @@
 *.csv
 Investigation/*.csv
-Investigation/salaries.csv
+data/salaries.csv
+env/

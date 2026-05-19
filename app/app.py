@@ -10,7 +10,7 @@ from model import LinearRegressionModel
 st.set_page_config(page_title="Salary Analytics Pro", layout="wide")
 
 # --- DATA LOADING --- #
-data_raw = pd.read_csv('../data/salaries.csv')
+data_raw = pd.read_csv('./data/salaries.csv')
 df = pd.DataFrame(data_raw)
 
 # Model caching to avoid retraining on every interaction

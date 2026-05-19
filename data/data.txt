@@ -1,0 +1,1 @@
+Link to salaries.csv : https://www.kaggle.com/code/arkreyes/simple-linear-regression-notebook

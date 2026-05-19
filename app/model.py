@@ -39,6 +39,7 @@ class LinearRegressionModel:
         
         # Calculating MSE and S using the residuals
         ssr = np.sum(self.residuals**2)
+        self.sse = np.sum(self.residuals**2)
         self.MSE = ssr / (self.n - 2)
         self.S = math.sqrt(self.MSE)
         

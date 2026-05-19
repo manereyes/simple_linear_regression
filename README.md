@@ -58,7 +58,7 @@ Follow these steps to clone the repository, install the required environment dep
 ### 1. Clone the Repository
 Open your terminal and run the following commands to clone this project and navigate into the root directory:
 ```bash
-git clone [https://github.com/manereyes/simple_linear_regression.git](https://github.com/manereyes/simple_linear_regression.git)
+git clone https://github.com/manereyes/simple_linear_regression.git
 cd simple_linear_regression
 ```
 

@@ -32,7 +32,7 @@ Unlike traditional calculators, this system not only provides a point estimate, 
 ## 📂 Project Architecture
 
 ```text
-SIMPLE_REGRESSION/
+simple_linear_regression/
 │
 ├── app/
 │   ├── app.py             # Streamlit user interface and navigation layout
@@ -47,3 +47,49 @@ SIMPLE_REGRESSION/
 │
 ├── .gitignore             # Specifies intentionally untracked files to ignore
 └── README.md              # Project documentation and setup guide
+```
+
+---
+
+## 💻 Getting Started: Installation and Setup
+
+Follow these steps to clone the repository, install the required environment dependencies, and run the Streamlit dashboard application locally.
+
+### 1. Clone the Repository
+Open your terminal and run the following commands to clone this project and navigate into the root directory:
+```bash
+git clone [https://github.com/manereyes/simple_linear_regression.git](https://github.com/manereyes/simple_linear_regression.git)
+cd simple_linear_regression
+```
+
+### 2. Set Up Your Environment
+It is highly recommended to use a virtual environment (such as the env/ directory specified in the project layout) to keep your global Python dependencies clean.
+
+**On macOS/Linux:**
+
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+
+**On Windows:**
+```bash
+python -m venv env
+env\Scripts\activate
+```
+
+### 3. Install Dependencies
+Install all the mandatory libraries required to compute the statistical engine and render the interactive data visualizations:
+
+```bash
+pip install streamlit scikit-learn scipy pandas numpy matplotlib seaborn
+```
+
+### 4. Run the Streamlit Application
+Since the core frontend script is located inside the `app/` directory, execute the following command from the root of your project to launch the dashboard:
+
+```bash
+streamlit run app/app.py
+```
+
+Once executed, a local web server will spin up, and the application will automatically open in your default browser at `http://localhost:8501` .

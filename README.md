@@ -93,3 +93,32 @@ streamlit run app/app.py
 ```
 
 Once executed, a local web server will spin up, and the application will automatically open in your default browser at `http://localhost:8501` .
+
+---
+
+## 📱 Application Design and Usage
+
+The dashboard is split into two logical views accessible via the sidebar navigation. Below is a breakdown of the layout and functionality of each page, along with placeholders where you can view the live interface.
+
+### 1. Salary Prediction Calculator (`Calculadora de Salarios`)
+This is the consumer-facing interface. It allows users to input their professional experience and instantly receive structured, risk-adjusted salary insights.
+
+* **Sidebar Slider:** A dynamic input control strictly bounded between **1.1 and 10.5 years of experience** to prevent statistical extrapolation outside our validated sample range.
+* **Key Performance Metrics (KPIs):** Displays the exact **Point Estimate** alongside the precise lower and upper boundaries of the **Individual Prediction Interval** (calibrated at a 95% confidence level).
+* **Interactive Regression Plot:** Visualizes where the user's specific query drops onto the trained regression line relative to the underlying historical scatter plot.
+
+#### Interface Preview:
+![Salary Prediction Dashboard Interface](app/images/calculator_preview.png)
+
+---
+
+### 2. Analytical Investigation and Validation (`Investigación Detallada`)
+This view serves as an audit panel to prove the model's validity, demonstrating that the errors satisfy the Gauss-Markov assumptions before executing any deployment.
+
+It is structured into three dedicated tabs for systematic navigation:
+* **Dataset & ANOVA Tab:** Displays the original tabular historical data side-by-side with a dynamically reconstructed **ANOVA Table** (detailing Degrees of Freedom, Sum of Squares, Mean Squares, and the overall $F$-statistic).
+* **Residual Analysis Tab:** Contains the **Residuals vs. Fitted Plot** to audit homoscedasticity and independent errors, alongside our custom **Normal Probability Plot** to visually verify error normality.
+* **Correlation Tab:** Renders a clean Seaborn heatmap matrix confirming the strength of the linear relationship between the features.
+
+#### Interface Preview:
+![Model Validation and ANOVA Tab Preview](app/images/investigation_preview.png)

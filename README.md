@@ -100,7 +100,7 @@ Once executed, a local web server will spin up, and the application will automat
 
 The dashboard is split into two logical views accessible via the sidebar navigation. Below is a breakdown of the layout and functionality of each page, along with placeholders where you can view the live interface.
 
-### 1. Salary Prediction Calculator (`Calculadora de Salarios`)
+### 1. Salary Prediction Calculator (`Salaries Calculator`)
 This is the consumer-facing interface. It allows users to input their professional experience and instantly receive structured, risk-adjusted salary insights.
 
 * **Sidebar Slider:** A dynamic input control strictly bounded between **1.1 and 10.5 years of experience** to prevent statistical extrapolation outside our validated sample range.
@@ -112,7 +112,7 @@ This is the consumer-facing interface. It allows users to input their profession
 
 ---
 
-### 2. Analytical Investigation and Validation (`Investigación Detallada`)
+### 2. Analytical Investigation and Validation (`Analytics`)
 This view serves as an audit panel to prove the model's validity, demonstrating that the errors satisfy the Gauss-Markov assumptions before executing any deployment.
 
 It is structured into three dedicated tabs for systematic navigation:
